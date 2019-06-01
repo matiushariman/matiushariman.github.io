@@ -1,9 +1,10 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "matiushariman-website",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Personal Website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Matius Hariman N (matius.hariman@gmail.com)",
+  "homepage": "https://matiushariman.github.io",
   "dependencies": {
     "gatsby": "^2.7.3",
     "gatsby-image": "^2.1.1",
@@ -19,6 +20,7 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "prettier": "^1.17.1"
   },
   "keywords": [
@@ -28,6 +30,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "deploy": "gatsby build && gh-pages -d public -b master",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
