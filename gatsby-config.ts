@@ -6,6 +6,7 @@ const config: GatsbyConfig = {
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [],
+  pathPrefix: '/matiushariman.github.io'
 }
 
 export default config
