@@ -3,7 +3,7 @@ import type { GatsbyConfig } from 'gatsby';
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `matiushariman`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://matiushariman.github.io`,
   },
   plugins: [
     {
@@ -14,7 +14,6 @@ const config: GatsbyConfig = {
       },
     },
   ],
-  pathPrefix: '/matiushariman.github.io',
 };
 
 export default config;
