@@ -1,12 +1,20 @@
-import type { GatsbyConfig } from "gatsby"
+import type { GatsbyConfig } from 'gatsby';
 
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `matiushariman`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
-  pathPrefix: '/matiushariman.github.io'
-}
+  plugins: [
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`ubuntu`],
+        display: 'swap',
+      },
+    },
+  ],
+  pathPrefix: '/matiushariman.github.io',
+};
 
-export default config
+export default config;
