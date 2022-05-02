@@ -4,9 +4,9 @@ import Typography from '@mui/material/Typography';
 import * as React from 'react';
 
 export const Header = () => (
-  <AppBar position="static">
+  <AppBar color="transparent" position="static" elevation={0}>
     <Toolbar>
-      <Typography>matiushariman.github.io</Typography>
+      <Typography variant="h6">matiushariman.github.io</Typography>
     </Toolbar>
   </AppBar>
 );
