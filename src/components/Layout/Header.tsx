@@ -6,7 +6,9 @@ import * as React from 'react';
 export const Header = () => (
   <AppBar color="transparent" position="static" elevation={0}>
     <Toolbar>
-      <Typography variant="h6">matiushariman.github.io</Typography>
+      <Typography variant="h6" fontWeight="bold">
+        matiushariman.github.io
+      </Typography>
     </Toolbar>
   </AppBar>
 );

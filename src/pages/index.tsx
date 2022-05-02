@@ -6,36 +6,59 @@ import Typography from '@mui/material/Typography';
 import * as React from 'react';
 
 import { Layout } from '../components/Layout';
-import MyPic from '../images/matiushariman.jpeg';
+import MyPic from '../images/matiushariman-face.png';
 
-// markup
 const IndexPage = () => (
   <Layout>
     <title>matiushariman.github.io</title>
-    <Container>
-      <Box sx={{ p: 4 }}>
-        <Grid alignItems="center" spacing={4} container>
+    <Box sx={{ backgroundColor: '#eaf2fd' }}>
+      <Container
+        sx={(theme) => ({
+          [theme.breakpoints.up('md')]: {
+            p: 6,
+          },
+          pb: 4,
+        })}
+      >
+        <Grid alignItems="center" spacing={2} container>
           <Grid item xs={12} md={5}>
             <Box display="flex" justifyContent="space-around">
-              <Avatar alt="My Picture" src={MyPic} sx={{ width: 224, height: 224 }} />
+              <Avatar alt="My Picture" src={MyPic} sx={{ height: 224, width: 224 }} />
             </Box>
           </Grid>
           <Grid item xs={12} md={7}>
             <Grid spacing={1} container>
               <Grid item xs={12}>
-                <Typography color="primary" variant="h4">
+                <Typography
+                  color="primary"
+                  variant="h4"
+                  sx={(theme) => ({
+                    [theme.breakpoints.down('sm')]: {
+                      textAlign: 'center',
+                    },
+                  })}
+                >
                   Hi, I&apos;m Matius!
                 </Typography>
               </Grid>
               <Grid item xs={12}>
-                <Typography>This page is currently still under construction.</Typography>
-                <Typography>Please stay tune for more updates!</Typography>
+                <Typography
+                  sx={(theme) => ({
+                    [theme.breakpoints.down('sm')]: {
+                      textAlign: 'center',
+                    },
+                  })}
+                >
+                  A seasoned front-end engineer with years of experience building state of the art
+                  web applications, I am passionate about delivering modern user experience in the
+                  most efficient way possible
+                </Typography>
               </Grid>
             </Grid>
           </Grid>
         </Grid>
-      </Box>
-    </Container>
+      </Container>
+    </Box>
   </Layout>
 );
 

@@ -1,3 +1,4 @@
+import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import * as React from 'react';
@@ -31,7 +32,15 @@ export const Layout = ({ children }: LayoutProps) => (
     <CssBaseline />
     <ThemeProvider theme={theme}>
       <Header />
-      <main>{children}</main>
+      <Box
+        sx={(theme) => ({
+          [theme.breakpoints.down('sm')]: {
+            pt: 2,
+          },
+        })}
+      >
+        {children}
+      </Box>
     </ThemeProvider>
   </>
 );
