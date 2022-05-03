@@ -4,6 +4,7 @@ import { createTheme, ThemeProvider, Palette, lighten } from '@mui/material/styl
 import * as React from 'react';
 
 import { ColorModeContext } from './ColorModeContext';
+import Footer from './Footer';
 import { Header } from './Header';
 
 export type LayoutProps = {
@@ -134,6 +135,7 @@ export const Layout = ({ children }: LayoutProps) => {
         <ThemeProvider theme={theme}>
           <Header />
           <Box>{children}</Box>
+          <Footer />
         </ThemeProvider>
       </ColorModeContext.Provider>
     </Box>
