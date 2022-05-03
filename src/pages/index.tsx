@@ -4,6 +4,7 @@ import * as React from 'react';
 
 import AboutMe from '../components/Home/AboutMe';
 import Hello from '../components/Home/Hello';
+import MyExperience from '../components/Home/MyExperience';
 import { Layout } from '../components/Layout';
 
 const IndexPage = () => (
@@ -23,6 +24,11 @@ const IndexPage = () => (
     <Paper>
       <Container>
         <AboutMe />
+      </Container>
+    </Paper>
+    <Paper>
+      <Container>
+        <MyExperience />
       </Container>
     </Paper>
   </Layout>
