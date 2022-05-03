@@ -26,6 +26,13 @@ export const Layout = ({ children }: LayoutProps) => {
       createTheme({
         palette: {
           mode,
+          ...(mode === 'dark'
+            ? {
+                background: {
+                  paper: '#0a192f',
+                },
+              }
+            : {}),
         },
         typography: {
           fontFamily: [
