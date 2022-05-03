@@ -1,6 +1,6 @@
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
-import { createTheme, ThemeProvider, Palette } from '@mui/material/styles';
+import { createTheme, ThemeProvider, Palette, lighten } from '@mui/material/styles';
 import * as React from 'react';
 
 import { ColorModeContext } from './ColorModeContext';
@@ -31,6 +31,7 @@ export const Layout = ({ children }: LayoutProps) => {
                 background: {
                   paper: '#0a192f',
                 },
+                divider: lighten('#0a192f', 0.2),
               }
             : {}),
         },
@@ -50,6 +51,18 @@ export const Layout = ({ children }: LayoutProps) => {
           ].join(','),
         },
         components: {
+          MuiAppBar: {
+            styleOverrides: {
+              colorDefault: ({ theme }) => ({
+                ...(mode === 'light'
+                  ? {
+                      backgroundColor: '#fff',
+                    }
+                  : {}),
+                borderBottom: `1px solid ${theme.palette.divider}`,
+              }),
+            },
+          },
           MuiChip: {
             styleOverrides: {
               avatarColorPrimary: {
