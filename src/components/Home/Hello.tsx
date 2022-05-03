@@ -31,14 +31,14 @@ const Hello = () => (
         <Grid spacing={1} container>
           <Grid item xs={12}>
             <Typography>
-              I&aposm a seasoned front-end engineer with years of experience building state of the
+              I&apos;m a seasoned front-end engineer with years of experience building state of the
               art web applications, I am passionate about delivering modern user experience in the
               most efficient way possible.
             </Typography>
           </Grid>
           <Grid item xs={12}>
             <Typography>
-              Right now, I&aposm busy creating next-gen financial products at{' '}
+              Right now, I&apos;m busy creating next-gen financial products at{' '}
               <Link href="https://www.bambu.co/" target="_blank" fontSize="inherit">
                 BAMBU
               </Link>
