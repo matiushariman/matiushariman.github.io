@@ -42,6 +42,12 @@ module.exports = {
     //         'import/export': 0,
     //     },
     // },
+    {
+      files: ['src/components/Layout/ColorModeContext.ts'],
+      rules: {
+        '@typescript-eslint/no-empty-function': 0,
+      },
+    },
   ],
   settings: {
     'import/resolver': {

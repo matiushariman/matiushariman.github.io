@@ -2,6 +2,7 @@ import Avatar from '@mui/material/Avatar';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
+import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import * as React from 'react';
 
@@ -11,7 +12,7 @@ import MyPic from '../images/matiushariman-face.png';
 const IndexPage = () => (
   <Layout>
     <title>matiushariman.github.io</title>
-    <Box sx={{ backgroundColor: '#eaf2fd' }}>
+    <Paper square elevation={1}>
       <Container
         sx={(theme) => ({
           [theme.breakpoints.up('md')]: {
@@ -58,7 +59,7 @@ const IndexPage = () => (
           </Grid>
         </Grid>
       </Container>
-    </Box>
+    </Paper>
   </Layout>
 );
 
