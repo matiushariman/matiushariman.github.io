@@ -43,6 +43,27 @@ export const Layout = ({ children }: LayoutProps) => {
           ].join(','),
         },
         components: {
+          MuiChip: {
+            styleOverrides: {
+              avatarColorPrimary: {
+                backgroundColor: 'transparent',
+              },
+            },
+          },
+          MuiContainer: {
+            styleOverrides: {
+              root: ({ theme }) => ({
+                [theme.breakpoints.up('md')]: {
+                  padding: 96,
+                  paddingTop: 32,
+                },
+                [theme.breakpoints.down('md')]: {
+                  paddingTop: 32,
+                  paddingBottom: 56,
+                },
+              }),
+            },
+          },
           MuiPaper: {
             styleOverrides: {
               elevation1: ({ theme }) => ({
@@ -59,6 +80,15 @@ export const Layout = ({ children }: LayoutProps) => {
                 },
                 [theme.breakpoints.down('md')]: {
                   fontSize: '2.5rem',
+                },
+              }),
+              h2: ({ theme }) => ({
+                fontWeight: 'bold',
+                [theme.breakpoints.up('md')]: {
+                  fontSize: '1.75rem',
+                },
+                [theme.breakpoints.down('md')]: {
+                  fontSize: '1.2rem',
                 },
               }),
             },
