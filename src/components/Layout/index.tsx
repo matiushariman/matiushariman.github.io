@@ -51,13 +51,34 @@ export const Layout = ({ children }: LayoutProps) => {
               }),
             },
           },
+          MuiTypography: {
+            styleOverrides: {
+              h1: ({ theme }) => ({
+                [theme.breakpoints.up('md')]: {
+                  fontSize: '4rem',
+                },
+                [theme.breakpoints.down('md')]: {
+                  fontSize: '2.5rem',
+                },
+              }),
+            },
+          },
         },
       }),
     [mode],
   );
 
   return (
-    <Box sx={{ pt: 8 }}>
+    <Box
+      sx={(theme) => ({
+        [theme.breakpoints.up('md')]: {
+          pt: 8,
+        },
+        [theme.breakpoints.down('md')]: {
+          pt: 7,
+        },
+      })}
+    >
       <CssBaseline />
       <ColorModeContext.Provider value={colorMode}>
         <ThemeProvider theme={theme}>
