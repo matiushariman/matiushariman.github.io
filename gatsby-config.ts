@@ -14,6 +14,20 @@ const config: GatsbyConfig = {
       },
     },
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `matiushariman.github.io`,
+        short_name: `matiushariman`,
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#1976d2`,
+        display: `standalone`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+    },
+    {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
