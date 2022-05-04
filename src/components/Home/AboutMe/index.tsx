@@ -8,10 +8,8 @@ import ListOfSkills from './ListOfSkills';
 import MyPic from '../../../images/matiushariman-face.png';
 
 const CONTENT = [
-  'Hi there! My name is Matius. ' +
-    'Since I was a kid I have always been obsessed with computer graphics and anything that I find aesthetically pleasing. ' +
-    'That obsession grew over time and led me to take interests in fields such as game development, until I finally landed me my first job in web development as a front-end engineer back in early 2017.',
-  'My desire is to always present the best experience for the end-users, cause no words can describe the feeling I feel everytime I know they enjoy using the applications that I help create!.',
+  'My name is Matius. I’m an Indonesian-born Singapore permanent resident and a Senior Front-end Engineer at Bambu, a fintech startup specializing in robo-advisory based in Singapore',
+  'I have always been passionate about software programming since I was a kid, starting from the day I used to play around with Visual Basic back in secondary school. There is something about computer programming, specifically front-end engineering that always excites me. Seeing how lines of code work in harmony on the screen, knowing what I help create can be enjoyed by hundreds of thousands or million users, and that it can help change the world for the better, those are things that always give me a sense of achievement and most importantly happiness',
 ];
 
 const AboutMe = () => (
