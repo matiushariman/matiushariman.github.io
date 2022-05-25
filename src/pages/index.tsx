@@ -4,6 +4,7 @@ import { styled, lighten, darken } from '@mui/material/styles';
 import * as React from 'react';
 
 import AboutMe from '../components/Home/AboutMe';
+import FeaturedPortfolios from '../components/Home/FeaturedPortfolios';
 import Hello from '../components/Home/Hello';
 import MyExperience from '../components/Home/MyExperience';
 import { Layout } from '../components/Layout';
@@ -47,6 +48,11 @@ const IndexPage = () => (
     <Section>
       <Container>
         <MyExperience />
+      </Container>
+    </Section>
+    <Section>
+      <Container>
+        <FeaturedPortfolios />
       </Container>
     </Section>
   </Layout>
