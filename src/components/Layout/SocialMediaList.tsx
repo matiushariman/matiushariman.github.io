@@ -1,7 +1,6 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import RedditIcon from '@mui/icons-material/Reddit';
 import IconButton from '@mui/material/IconButton';
 import Stack from '@mui/material/Stack';
 import * as React from 'react';
@@ -16,11 +15,6 @@ const SOCIAL = [
     icon: <LinkedInIcon />,
     alt: 'Linkedin',
     url: 'https://www.linkedin.com/in/matiushariman/',
-  },
-  {
-    icon: <RedditIcon />,
-    alt: 'Reddit',
-    url: 'https://www.reddit.com/user/SweggySpoderman9/',
   },
   {
     icon: <InstagramIcon />,
